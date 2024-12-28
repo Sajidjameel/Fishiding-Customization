@@ -1,0 +1,1201 @@
+---
+products:                  
+    new:
+        limit: {{theme_settings.homepage_new_products_count}}
+    featured:
+        limit: {{theme_settings.homepage_featured_products_count}}
+    top_sellers:
+        limit: {{theme_settings.homepage_top_products_count}}
+carousel: {{theme_settings.homepage_show_carousel}}
+blog:    
+    recent_posts:
+        limit: {{theme_settings.homepage_blog_posts_count}}
+---
+{{#partial "hero"}}  
+    {{{region name="home_below_menu"}}} 
+    {{#and carousel carousel.slides.length}}
+        {{> components/carousel arrows=theme_settings.homepage_show_carousel_arrows play_pause_button=theme_settings.homepage_show_carousel_play_pause_button}}
+    {{/and}}
+    {{{region name="home_below_carousel"}}}
+
+
+{{/partial}}
+
+{{#partial "page"}}
+ <div class="clearfix"></div>
+    {{#each shipping_messages}}
+        {{> components/common/alert/alert-info message}}
+    {{/each}}
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ 
+ <div class="clearfix"></div>
+ 
+<div class="main full">
+    
+     <div class="clearfix"></div>
+    <!--------start img section ----->
+<div class="main-cont-imgs">
+
+ <div class="clearfix"></div>
+  <!--------start ----->
+
+  <div class="c-row-m">
+
+      <div class="section-heading text-center">
+       <h2 class="section-title">Shop by Categories</h2>
+      </div>
+
+   <div class="c-row c-row1">
+        
+        <div class="img-cont">
+            <a href="/shallow-water-fish-habitat/">
+                <img class="img-c" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/updated.jpg" alt=""/>
+            </a>
+       </div>
+    
+       <div class="img-cont">
+           <a href="/mid-depth-fish-habitat/">
+               <img class="img-c" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/500x500artboard-2.jpg?t=1703140002" alt=""/>
+             </a>
+       </div>
+    
+       <div class="img-cont">
+            <a href="/deep-and-steep-terrrain-fish-habitat/">
+                <img class="img-c" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/500x500artboard-3.jpg?t=1703140006" alt=""/>
+            </a>
+       </div>
+    
+       <div class="img-cont">
+           <a href="/diy-artificial-fish-habitat-structure-materials/">
+               <img class="img-c" title=""  src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/500x500artboard-4.jpg?t=1703140004" alt=""/>
+           </a>
+       </div>
+
+   </div>
+
+   <div class="c-row c-row2">
+
+        <div class="img-cont">
+           <a href="/fishiding-in-barrels/">
+               <img class="img-c" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/750x350artboard-1.jpg?t=1703140009" alt=""/>
+              </a>
+       </div>
+
+        <div class="img-cont">
+            <a href="/diy-artificial-fish-habitat-structure-materials/" >
+                 <img class="img-c" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/750x350artboard-2.jpg?t=1703140010" alt=""/>
+           </a>
+        </div>
+   </div>
+
+  </div>
+
+  <!--------end ----->
+
+                   
+
+  
+
+
+</div>
+<!-------end img section-------->
+    
+    
+
+    
+    {{#if theme_settings.display-header-banner}}
+        {{> components/epicContent/header/header-banner}}
+    {{/if}}
+    {{#if theme_settings.display-mega-banner}}
+        {{> components/epicContent/mega-banner/mega-banner}}
+    {{/if}}
+    {{#if products.featured}}
+        <section class="featured-product-section">
+            <div class="container">
+                {{> components/products/featured products=products.featured columns=theme_settings.homepage_featured_products_column_count}}    
+            </div>
+        </section>
+    {{/if}}
+    {{{region name="home_below_featured_products"}}}
+    {{#if products.top_sellers}}
+    <section class="top-product-section">
+        <div class="container">
+        {{> components/products/top products=products.top_sellers columns=theme_settings.homepage_top_products_column_count}}
+    </div>
+    </section>
+    {{/if}}
+  <!--<div class="fullWidthVideo">-->
+  <!--    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/wcF5RkSDQmg" frameborder="0" allowfullscreen></iframe> -->
+  <!--</div>  -->
+    
+    
+    
+    <!--------start slider images section ----->
+
+
+ <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+        
+
+
+<div class="main-cont-sld">
+
+
+  <!--------start ----->
+
+<div class="sl-wrap">
+
+  <div class="c-row-sl1">
+      <h2 class="section-title" style="font-weight:600">Hot Selling</h2>
+      <p class="desc">Explore the allure of the aquatic world with our premium Best Sellers collection of artificial fish habitats. These hot-selling masterpieces are not just products but gateways to vibrant, underwater paradises. Crafted with precision and care, each habitat features intricate designs and lifelike textures that fish love, enhancing the beauty and biological diversity of any tank or pond. With easy installation and long-lasting materials, our habitats are a top choice for hobbyists and professionals seeking a mesmerizing underwater experience. Elevate your aquatic space and witness the transformation with our sought-after, eco-friendly havens for aquatic life.</p>
+      <!--<a class="link" href="#" aria-label="View All"><span>View All Rooms</span></a>-->
+  </div>
+
+    
+  <div class="c-row-sl">
+
+   <div class="slr">
+    
+    <div class="img-sl">
+   <a href="/cradle-artificial-shallow-fry-habitat/"><img class="" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/cradle-artificial-shallow-fry-habitat.jpg?t=1703143571" alt="" /></a>
+   </div>
+
+   <div class="img-sl">
+   <a href="/safehouse-artificial-fish-habitat/"><img class="" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/safehouse-artificial-fish-habitat.jpg?t=1703143577" alt="" /></a>
+   </div>
+
+   <div class="img-sl">
+   <a href="/the-fortress-self-opening-fish-habitat/"><img class="" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/the-fortress-self-opening-fish-habitat.jpg?t=1703143582" alt="" /></a>
+   </div>
+
+   <div class="img-sl">
+   <a href="/the-bunker-transition-fish-habitat/"><img class="" title="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/the-bunker-transition-fish-habitat.jpg?t=1703143590" alt="" /></a>
+   </div>
+
+  </div>
+
+  </div>
+
+</div>
+  <!--------end ----->
+  
+
+
+</div>
+<!-------end slider images section-------->
+
+
+
+    {{#if theme_settings.display-content-snippets}}
+        <section class="content-snippet-section">
+            {{> components/epicContent/home-content-snippet}}
+        </section>
+        {{/if}}
+
+    {{{region name="home_below_top_products"}}}
+
+    {{#if products.new}}
+    <section class="new-product-section">
+        <div class="container">
+        {{> components/products/new products=products.new columns=theme_settings.homepage_new_products_column_count}}
+    </div>
+    </section>
+    {{/if}}
+    
+    
+    
+    <div class="cus-reviews">
+       <div class="row">
+        <div class="col-md-4 mera-tota"> 
+        <div class="cr">
+            <h3>Customer Reviews</h3>
+            <p>Explore real stories in our Customer Reviews: where vibrant ecosystems come to life. See how our artificial habitats elevate aquariums and inspire aquatic enthusiasts. Join our community and dive into the transformation!</p>
+            <a href="/customer-comments/">Read All Reviews</a>
+        </div>
+        </div>
+        
+        <div class="col-md-8">             
+        <!--viewBox carousel-->
+        
+        <div class="row1 rev-new">
+                      <div class="col-md1-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                           
+                         
+                            <figure> <img alt="" src="https://cdn1.bigcommerce.com/server600/0411d/product_images/uploaded_images/img-0027.jpeg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                         
+                            <div class="item-box-blog-heading">
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+
+                            </div>
+                           
+                            <div class="item-box-blog-text">
+                              <p>------Your products have been a God send for our lake. As new homes were built shoreline habitat began to disappear. We needed something to allow the fish to hide and proliferate. The results are beginning to show fish ARE hanging out around these structures. It’s been about 6-7 months and here are two photos of some lunkers my son and I picked up around these structures. We hope to place more in other areas in 2022. Great products!!!</p>
+                              
+                            </div>
+                            <b>Rich Dotson Magnolia Texas</b>
+                          
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md1-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                          
+                          
+                            <figure> <img alt="" src="https://cdn1.bigcommerce.com/server600/0411d/product_images/uploaded_images/dreilings-habitat.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                        
+                           <div class="item-box-blog-heading">
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+
+                            </div>
+                           
+                            <div class="item-box-blog-text">
+                              <p>------My interest in growing more and bigger fish runs pretty deep. In the past several years I’ve done about everything, from sinking cedars (lure magnets), building my own from pvc etc, and used product form several companies. Fishiding has the best product hands down. They’ve put a lot more science into their work, and we’re the most helpful in helping me select the right products for what I was wanting to accomplish. I’m amazed at how much of an impact this has in a fishery, particularly for the baitfish</p>
+                              
+                            </div>
+                            <b>Dave Dreiling, Manhattan, Kansas</b>
+                            
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md1-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                            
+                         
+                            <figure><img alt="" src="https://cdn1.bigcommerce.com/server600/0411d/product_images/uploaded_images/img-3478.jpg"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                            
+                            <div class="item-box-blog-heading">
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+
+                            </div>
+                          
+                            <div class="item-box-blog-text">
+                              <p>------I’ve ordered a ton of stuff from Fishiding. Great customer service!! Always willing to answer questions! The cradle hair package is great as you can use it in all your builds..</p>
+                               
+                            </div>
+                           <b> Martin deGravelle,Monroe, LA</b>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md1-4" >
+                        <div class="item-box-blog">
+                          <div class="item-box-blog-image">
+                           
+                            
+                            <figure> <img alt="" src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/chris-kelsay-with-david.jpg?t=1703161338"> </figure>
+                          </div>
+                          <div class="item-box-blog-body">
+                          
+                            <div class="item-box-blog-heading">
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+                             <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" data-slot="icon" class="w-6 h-6">
+  <path fill-rule="evenodd" d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z" clip-rule="evenodd" />
+</svg>
+
+                            </div>
+                          
+                            <div class="item-box-blog-text">
+                              <p>------Excellent product David. I have seen fry continuously feed on these for hours as well as fingerlings and juvenille's. These small supermarkets absorb the suspended food and accumulate in abundance continuously. Cleaning water and making food, what could be better! Well done, Laddie Flock, Floating island International, Inc.</p>
+                              
+                            </div>
+                             <b>Jerod Harmon</b>
+                            <!--Read More Button-->
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+        
+        
+        </div>
+    </div>
+  
+    </div>
+    
+    
+      <div class="" style="">
+           <img src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/free-shipping.jpg?t=1703700210" alt="" width="100%" />
+      </div>
+    
+     
+
+
+    <div class="thead1" style="background:#C7F6C7;">
+        
+    <div class="tim" style="text-align:center;">
+       <!-- <img src="https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/1920x900.png?t=1703164586" />-->
+       
+      <div class="section-heading text-center">
+       <h2 class="section-title">ABOUT US</h2>
+      </div>
+
+<p style="max-width: 500px;margin:0 auto 20px;">Fishiding Reclaimed Artificial Fish Habitat products, continue to lead the fisheries industry with innovative forms of strictly reclaimed PVC, creating artificial fish habitat since 2008. Fish Structures creating abstract, handmade housing for all sizes of fish, bugs and tiniest of underwater creatures. Unparalleled density protecting fry, forage and game fish. Snag free limbs, pieces and design, self weighted base holds entire habitat units standing upright. Unfold, drop in and fish.
+</p>
+
+
+<a href="/product-details-about-us/" class="button button--primary form-prefixPostfix-button--postfix"  >Read More</a>
+
+    </div> 
+   
+<div class="fullWidthVideo">
+<video   autoplay muted>
+  <source src="https://store-grkutui2wm.mybigcommerce.com/content/Fishiding%20artificial%20fish%20habitat%20new%20underwater%20refuge%20configuration.mp4" type="video/mp4">
+  <source src="https://store-grkutui2wm.mybigcommerce.com/content/Fishiding%20artificial%20fish%20habitat%20new%20underwater%20refuge%20configuration.mp4" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</div>
+
+</div>
+
+<style>
+
+.thead1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 20px;
+    /*margin-top: 30px;*/
+    padding-top:20px;
+}
+.tim{
+    width:49%;
+}
+.tim img,.fullWidthVideo video{
+    width:100%;
+    height: 500px; 
+}
+.fullWidthVideo{
+    width:49%;
+}
+
+@media only screen and (max-width:767px){
+.fullWidthVideo{
+    width:100%;
+}
+.tim{
+    width:100%;
+}
+    
+}
+</style>
+
+
+
+
+    
+<div class="myCustom">
+    <div class="vClass">
+        <div class="textArea">
+      <h3>FISHIDING ARTIFICIAL FISH HABITAT NEW UNDERWATER REFUGE CONFIGURATION</h3>
+      <p>Flexible limbs of all sizes with massive surface areas, produce shade, food and a natural feeling of protection. All models self open or bend to shape by hand and include an incorporated and fully weighted base. No cables or chains to snag.
+For well over a decade, we have studied fish preferences towards all types of safe plastics, natural and artificial materials, by scuba diving and observing actual fish use. PVC invites and enhances aquatic life better than any other plastic type found, heightened by the unlimited variation of substantially flat profiles. It most certainly excels in periphyton development, zooplankton and fish use. All Fishiding reclaimed habitat requires no additional parts, tools or supplies to install.</p>
+   </div>
+   <!--<div class="viewArea">
+       <a href="#">View All</a>
+   </div>-->
+    </div>
+   
+ 
+
+   <div class="j">
+    <div class="jinga">
+      <div class="scroll-button scroll-button-left" onclick="scrollContent('left')"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+</div>
+      <div class="inner-jinga">
+        <iframe class="set3" src="//www.youtube.com/embed/4CG3dH1SwP0?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/Rmf0n9KOJlE?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/azFpDcRsLjg?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/BKYCN1wLb2A?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/psbWjttLXjo?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/0FaXT6c8ZC8?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/78BfPyWjj3I?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/v4oO2MOVrE8?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/Pu8F5QANllQ?fs=1" frameborder="0" allowfullscreen></iframe>
+        <iframe class="set3" src="//www.youtube.com/embed/4rgQQb83VGM?fs=1" frameborder="0" allowfullscreen></iframe>
+        
+        <!-- Add more iframe elements with different video IDs here -->
+      </div>
+      <div class="scroll-button scroll-button-right" onclick="scrollContent('right')"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+</div>
+    </div>
+  </div>
+ 
+ 
+</div>
+
+  
+    
+    
+    {{{region name="home_below_new_products"}}}
+    
+    {{#and (if theme_settings.display-blog-section ) (if settings.blog_enabled)}}
+    <section class="blog-section">
+        <div class="container-fluid">
+            {{> components/epicContent/home-blog is_blog_post=true}}
+        </div>
+    </section>
+    {{/and}}
+    
+    {{#if theme_settings.display-testimonial-section}}        
+    <section class="ti-section mt-4{{#if theme_settings.display-testimonial-section}} t-bg{{/if}}">
+        <div class="container-fluid">
+            <div class=" align-items-center">
+                <div class="">
+                        {{> components/epicContent/home-testimonials }}
+                </div>
+            </div>
+        </div>
+    </section>
+    {{/if}}
+</div>
+
+
+ <style>
+ .fullWidthVideo{
+   
+     margin-top= 100px;
+     margin-bottom: 100px ;
+ }
+ .set3{
+   width: 28%;
+     height: 338px;
+ }
+  @media  (max-width:728px){
+       .set3{
+   width: 50%;
+            }
+ }
+  @media  (max-width:400px){
+       .set3{
+   width: 100%;
+             }
+  }
+    .j{
+      position: relative;
+    }
+
+
+   
+    .jinga::-webkit-scrollbar {
+    display: none;
+}
+
+
+ .jinga{
+         scrollbar-width: none;
+  -ms-overflow-style: none; 
+    }
+
+
+
+    .jinga {
+      color: white;
+      width: 100%;
+      white-space: nowrap;
+      overflow: auto;
+      
+    }
+
+    .inner-jinga {
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    .jinga span {
+      display: inline-block;
+      white-space: nowrap;
+      margin-right: 10px; /* Adjust the margin as needed */
+    }
+
+    .scroll-button {
+        display: flex;
+      width: 4%; /* Adjust the button width */
+      height: 14%;
+      align-items: center;
+    justify-content: center;
+      background:#ffffff;
+      position: absolute;
+      top: 50%;
+     border-radius: 100px ;
+      cursor: pointer;
+      transition: background 0.3s;
+      -moz-box-shadow: 0 0 3px #ccc;
+-webkit-box-shadow: 0 0 3px #ccc;
+box-shadow: 0 0 3px #ccc;
+    }
+    .scroll-button svg{
+        width:50%;
+        stroke:black;
+    }
+    
+
+    .scroll-button-left {
+      left: 33px;
+    }
+
+    .scroll-button-right {
+      right:33px;
+    }
+
+    .scroll-button:hover {
+      background: #999;
+    }
+    .vClass{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        align-items: end;
+        background: #f6f6f6;
+    }
+    .textArea{
+        padding-top: 20px;
+        width: 100%;
+        margin-left: 40px;
+    }
+    .textArea h3{
+        font-weight: 700;
+    }
+    .textArea p{
+        font-weight: 500 ;
+    }
+    .textArea h3,.textArea p{
+       
+        text-align: center;
+    }
+    .viewArea{
+        width: 10%;
+         margin-right: 40px;
+         color:blue;
+         pointer:cursor;
+         text-decoration: underline;
+    }
+    
+    span{
+      color: blue;
+    }
+    
+    
+    
+    /*card styling here*/
+    
+.col-md-4{
+    padding-bottom:20px;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.bg-blue-ui {
+  background-color: #708198 !important;
+}
+figure img{width:300px;}
+
+#blogCarousel {
+  padding-bottom: 100px;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  
+}
+
+
+/* The colour of the indicators */
+
+.blog .carousel-indicators li {
+  background: #708198;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.blog .carousel-indicators .active {
+ background: blue;
+}
+
+
+.carousel-indicators{
+    margin-right: 0;
+     margin-left: 0;
+     bottom: 10%;
+}
+
+.item-carousel-blog-block {
+  outline: medium none;
+  padding: 15px;
+}
+
+.item-box-blog {
+  border: 1px solid #dadada;
+  text-align: center;
+  z-index: 4;
+  padding: 20px;
+}
+
+.item-box-blog-image {
+  position: relative;
+}
+
+.item-box-blog-image figure img {
+  width: 100%;
+  height: auto;
+   height: 220px;
+   object-fit: cover;
+}
+
+.item-box-blog-date {
+  position: absolute;
+  z-index: 5;
+  padding: 4px 20px;
+  top: -20px;
+  right: 8px;
+  background-color: #41cb52;
+}
+
+.item-box-blog-date span {
+  color: #fff;
+  display: block;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.item-box-blog-date span.mon {
+  font-size: 18px;
+}
+
+.item-box-blog-date span.day {
+  font-size: 16px;
+}
+
+.item-box-blog-body {
+  padding: 10px;
+}
+.item-box-blog-body p{
+    margin-bottom: 15px;
+}
+.item-box-blog-body .item-box-blog-heading{
+    margin-bottom: 15px; 
+}
+.item-heading-blog a h5 {
+  margin: 0;
+  line-height: 1;
+  text-decoration:none;
+  transition: color 0.3s;
+}
+.item-box-blog-heading{
+  display: flex;  
+}
+
+.item-box-blog-heading svg{
+    width:10%;
+   stroke: orange;
+   fill:orange;
+}
+
+
+
+
+
+.item-box-blog-text {
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.mt-10 {
+  float: left;
+  margin-top: -10px;
+  padding-top: 10px;
+}
+
+.btn.bg-blue-ui.white.read {
+  cursor: pointer;
+  padding: 4px 20px;
+  float: left;
+  margin-top: 10px;
+}
+
+.btn.bg-blue-ui.white.read:hover {
+  box-shadow: 0px 5px 15px inset #4d5f77;
+}
+    
+    .active, .dot:hover{
+        background: white !important;
+    }
+    li.active{
+        background: black !important;
+    }
+    .carousel-inner{
+        position: unset;
+        display: flex;
+        overflow: hidden;
+    }
+    .carousel-item{
+      flex: 1;
+      transition: transform 0.5s ease;
+    }
+    .item-box-blog {
+     border: unset;
+    text-align: unset; 
+    padding: unset;}
+    .mera-tota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+.cr {
+    width: 100%;
+    margin-left: 11%;
+}
+.cr p{
+    width: 70%;
+}
+    .cr a{
+        text-decoration: underline;
+    }
+.blog .carousel-indicators li {
+    background: transparent;
+    
+    width: 15px;
+    border: 1px solid black;
+    height: 15px;
+} 
+  </style>
+ 
+   <script>
+    const container = document.querySelector('.jinga');
+    const innerJinga = document.querySelector('.inner-jinga');
+    const scrollAmount = getSpanWidth(); // Move 3 spans at a time plus margin
+    const animationDuration = 200; // Duration of the smooth scroll animation in milliseconds
+
+    function scrollContent(direction) {
+      let targetScrollLeft = container.scrollLeft;
+
+      if (direction === 'left') {
+        targetScrollLeft -= scrollAmount;
+      } else if (direction === 'right') {
+        targetScrollLeft += scrollAmount;
+      }
+
+      smoothScroll(container, targetScrollLeft, animationDuration);
+    }
+
+    function getSpanWidth() {
+      const spans = document.querySelectorAll('.jinga iframe');
+      if (spans.length > 0) {
+        return spans[0].offsetWidth; // Include margin
+      }
+      return 0;
+    }
+
+    function smoothScroll(element, targetScrollLeft, duration) {
+      const startScrollLeft = element.scrollLeft;
+      const startTime = performance.now();
+
+      function step() {
+        const currentTime = performance.now();
+        const progress = Math.min(1, (currentTime - startTime) / duration);
+        element.scrollLeft = startScrollLeft + (targetScrollLeft - startScrollLeft) * progress;
+
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        }
+      }
+
+      requestAnimationFrame(step);
+    }
+   
+/* var listItems = document.querySelectorAll('.sms');
+    var divs = document.querySelectorAll('.carousel-item');
+
+    listItems.forEach(function(item, index) {
+      item.addEventListener('click', function() {
+        // Remove 'active' class from all list items and divs
+        listItems.forEach(function(li) {
+          li.classList.remove('active');
+        });
+        divs.forEach(function(div) {
+          div.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked list item and div
+        item.classList.add('active');
+        divs[index].classList.add('active');
+
+        // Move the div from left to right or right to left
+        if (index === 0) {
+          // Move to the left
+          divs[1].style.transform = 'translateX(-100%)';;
+        } else {
+          // Move to the right
+          divs[1].style.transform = 'translateX(0)';
+        }
+      });
+    });*/
+
+
+
+
+
+
+  </script>
+  
+  
+
+  
+  
+  
+<!--  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>-->
+<!--<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>-->
+{{/partial}}
+{{> layout/base}}
+
+<style>
+  /* img section imran  */
+  .main-cont-imgs{
+    padding: 60px 0;
+    background: #E5E5E5;
+  }
+
+  .c-row-m{
+        width: 80%;
+    margin: auto;
+  }
+  .c-row{
+      display: flex;
+      flex-wrap: wrap;
+      
+      column-gap: 2%;
+      row-gap: 20px;
+      align-items: center;
+  }
+
+.c-row1{
+ margin-bottom: 20px;
+}
+  .c-row1 .img-cont{
+    width:23.5% ;
+  }
+
+  .c-row2 .img-cont{
+     width: 49% ;
+  }
+   @media only screen and (max-width:767px){
+       .c-row1 .img-cont{
+    width:49% ;
+  }
+
+  .c-row2 .img-cont{
+     width: 100% ;
+  }
+   }
+
+.img-cont {
+    overflow:hidden ;
+    cursor: pointer;
+  }
+
+  .img-cont img{
+    width:100% ;
+    height: 100%;
+    transition: all .7s ease;
+  }
+
+.img-cont:hover .img-c
+{
+  transform: scale3d(1.1,1.1,1);
+}
+  
+
+
+   /* end img section imran  */ 
+</style>
+
+
+<!-------start slider images section-------->
+<style>
+  /* img section imran  */
+  .main-cont-sld{
+    padding: 30px;
+    background: #C7F6C7;
+  }
+
+  .sl-wrap{
+       display: flex;
+       flex-wrap: wrap;
+       row-gap: 20px;
+  }
+
+  .c-row-sl1{
+    width: 380px;
+    padding-top: 60px;
+    padding-right: 50px;
+  }
+  .c-row-sl{
+    width: calc(100% - 380px);
+  }
+
+  @media only screen and (max-width:991px){
+    .c-row-sl1{
+    width: 100%;
+  }
+  .c-row-sl{
+    width: 100%;
+   }
+  }
+  
+  .rev-new .slick-list{
+      margin-left: -16px ;
+     
+}
+
+.rev-new .slick-slide{
+      margin-left: 16px ;
+     
+}
+
+.main-cont-sld .slick-list{
+    padding:0 12% 0 0 !important;
+    margin-left: -26px 
+}
+.main-cont-sld .slick-slide{
+    
+    margin-left: 26px 
+}
+
+@media only screen and (max-width:991px){
+  .main-cont-sld .slick-list{
+    padding:0 0 0 0 !important;
+    margin-left: 0px 
+}
+.main-cont-sld .slick-slide{
+    
+    margin-left: 0px 
+}  
+}
+
+.main-cont-sld .slick-arrow{
+      height: 50px;
+    width: 50px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.3);
+        cursor: pointer;
+    background: #41ac35;
+    border: 1px solid #41ac35;
+    color:#fff;
+ }
+
+ .main-cont-sld .slick-prev:hover, .main-cont-sld .slick-next:hover{
+   border-color: #41ac35;
+       
+           background: #41ac35;
+ }
+ 
+ .main-cont-sld .slick-prev::before, .main-cont-sld .slick-next::before{
+   color: #fff !important;
+   }
+ 
+ .main-cont-sld .slick-next:hover{
+
+ }  
+
+
+   /* end img section imran  */ 
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function(){
+  $('.rev-new').slick({
+    infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+   responsive: [
+    
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 300,
+      settings: 'unslick',
+    },
+  ],
+  
+  });
+});
+
+$(document).ready(function(){
+  $('.slr').slick({
+    infinite: true,
+    dots:true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  
+  });
+});
+
+</script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<style>
+.heroCarousel.slick-initialized{
+    max-height: auto !important;
+}
+
+.rev-new .slick-arrow{
+      height: 50px;
+    width: 50px;
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,.3);
+        cursor: pointer;
+    background: #41ac35;
+    border: 1px solid #41ac35;
+    color:#fff;
+ }
+
+ .rev-new .slick-prev:hover, .rev-new .slick-next:hover{
+   border-color: #41ac35;
+       
+           background: #41ac35;
+ }
+ 
+ .rev-new.slick-prev::before, .rev-new .slick-next::before{
+   color: #fff !important;
+   }
+ 
+ .rev-new .slick-next:hover{
+
+ }  
+ .body{
+     background-color: #F5F5F5 !important;
+ }
+ .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.clearfix {
+  overflow: auto;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+
+}
+
+.cus-reviews {
+   
+    background-image: url( https://cdn11.bigcommerce.com/s-grkutui2wm/images/stencil/original/image-manager/shallow-water-fist-category.jpg?t=1703172390);
+    background-position: right;
+    background-size: cover;
+    padding: 70px 50px;
+    margin: auto;
+}
+
+@media only screen and (min-width: 1480px)
+{
+    .productCarousel-slide, .productGrid .product {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+.cr  h3 {font-weight:600; font-size:35px; margin-bottom:20px;color: white;}
+
+.cr a,
+.cr p,
+.item-box-blog-body p , .item-box-blog-text + b{
+    color: white;
+}
+.slick-next:before, .slick-prev:before {
+    color: #ffff !important;
+}
+
+
+.site-logo .header-logo-image {
+    max-height: 79px;
+}
+
+</style>
+
+<!-------end slider images section-------->
+
+
+
+
