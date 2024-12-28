@@ -1,0 +1,320 @@
+
+{{#partial "page"}}
+
+{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+
+<section class="page">
+    {{#unless theme_settings.hide_contact_us_page_heading }}
+    
+    {{/unless}}
+
+    {{#if page.sub_pages}}
+        <nav class="navBar navBar--sub">
+            <ul class="navBar-section account-navigation">
+                {{#each page.sub_pages}}
+                    <li class="navBar-item"><a class="navBar-action" href="{{url}}">{{title}}</a></li>
+                {{/each}}
+            </ul>
+        </nav>
+    {{/if}}
+
+    <div id="contact-us-page" class="page-content page-content--centered">
+        {{#if forms.contact.success}}
+            <div id="contact-us-success">{{{lang 'forms.contact_us.successful' shopPath=urls.home}}}</div>
+        {{else}}
+        
+            <!-- <p></p> -->
+            <!--{{{page.content}}}-->
+            <!--{{> components/page/contact-us-form}}-->
+
+            <div class="contact_flex">
+                <div  class="segment_contact">
+                  <div class="section-header">
+                    <div class="wrapper_seg">
+                          <h1 style="color:white" class="page-heading">{{page.title}}</h1>
+                      <p>
+                        Feel free to give us a call or send an e-mail with any questions or
+                        concerns you may have.Please fill out the form below and we will
+                        respond promptly. Payments and billing may be sent to office:
+                      </p>
+                    </div>
+                  </div>
+            
+                  <div class="wrapper_seg">
+                    <div class="wrapper_seg_row">
+                      <div class="contact-info">
+                        <!-- Add here -->
+                         {{{page.content}}} 
+                      
+                      </div>
+            
+                      <div class="contact-form">
+                         {{> components/page/contact-us-form}} 
+                        <!--<form action="" id="contact-form">-->
+                        <!--  <h2>Send Message</h2>-->
+                        <!--  <div class="input-box">-->
+                        <!--    <input type="text" required="true" name="" />-->
+                        <!--    <span>Full Name</span>-->
+                        <!--  </div>-->
+            
+                        <!--  <div class="input-box">-->
+                        <!--    <input type="email" required="true" name="" />-->
+                        <!--    <span>Email</span>-->
+                        <!--  </div>-->
+            
+                        <!--  <div class="input-box">-->
+                        <!--    <textarea required="true" name=""></textarea>-->
+                        <!--    <span>Type your Message...</span>-->
+                        <!--  </div>-->
+            
+                        <!--  <div class="input-box">-->
+                        <!--    <input type="submit" value="Send" name="" />-->
+                        <!--  </div>-->
+                        <!--</form>-->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        {{/if}}
+
+    </div>
+
+</section>
+
+{{/partial}}
+
+{{> layout/base}}
+
+
+<!--<p>We're happy to answer questions or help you with returns.<br />Please fill out the form below if you need assistance.</p>-->
+
+
+
+
+<!--linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url('https://cdn11.bigcommerce.com/s-0411d/images/stencil/original/image-manager/mossback-fish-habitat-cover-1600x808.jpg');-->
+<style>
+
+.form-label, .form-checkbox + .form-label, .form-radio + .form-label {
+    color: #fff !important;
+}
+    .contact_flex {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://cdn11.bigcommerce.com/s-da9mhg3oeo/images/stencil/original/image-manager/converted-image.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;  
+        color:#fff;
+       
+      }
+      
+   
+      .contact_flex::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      div.segment_contact {
+        position: relative;
+        z-index: 3;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .wrapper_seg {
+        max-width: 1170px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .section-header {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+
+      .section-header h2 {
+        color: #fff;
+        font-weight: bold;
+        font-size: 3em;
+        margin-bottom: 20px;
+      }
+
+      .section-header p {
+        color: #fff;
+      }
+
+      .wrapper_seg_row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .contact-info {
+        width: 50%;
+      }
+
+      .contact-info-item {
+        /*display: flex;*/
+        /*margin-bottom: 30px;*/
+        gap:1.5rem;
+        display: grid;
+        margin-bottom: 30px;
+        grid-template-columns: 70px auto;
+      }
+
+      .contact-info-icon {
+        /*height: 70px;*/
+        /*width: 70px;*/
+        /*background-color: #fff;*/
+        /*text-align: center;*/
+        /*border-radius: 50%;*/
+        /*color: #41ac35;*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
+        /*font-size: 50px;*/
+        
+        height: 70px;
+        width: 70px;
+        background-color: #fff;
+        text-align: center;
+        /* border-radius: 50%; */
+        color: #41ac35;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 43px;
+        flex-basis: 70px;
+
+      }
+
+      .contact-info-icon img {
+        width: 50px;
+      }
+
+         .contact-info-content {
+            /*margin-left: 35px;*/
+            flex-basis: 70%;
+        }
+
+      .contact-info-content h4 {
+            color: #ffffff;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+            margin-top: 0px;
+      }
+
+      .contact-info-content p {
+        color: #fff;
+        font-size: 1em;
+        white-space: nowrap;
+      }
+
+      .contact-form {
+            border-radius: 80px;
+            background-color: transparent;
+            padding: 80px 40px; 
+            width: 45%;
+            padding-bottom: 20px;
+            padding-top: 50px;
+            box-shadow: 0 0 5px 5px white
+      }
+
+      .contact-form h2 {
+        font-weight: bold;
+        font-size: 2em;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .contact-form .input-box {
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .contact-form .input-box input,
+      .contact-form .input-box textarea,
+      .form-input{
+        background: #000000;
+        width: 100%;
+        padding: 5px 10px;
+        font-size: 14px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #fff;
+        outline: none;
+        resize: none;
+        border-radius: 0;
+         color: white;
+      }
+
+      .contact-form .input-box span {
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        color: #666;
+      }
+
+      .contact-form .input-box input:focus ~ span,
+      .contact-form .input-box textarea:focus ~ span {
+        color: #e91e63;
+        font-size: 12px;
+        transform: translateY(-20px);
+      }
+
+      .contact-form .input-box input[type="submit"] {
+        width: 100%;
+        background: #00bcd4;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        font-size: 18px;
+        border: 1px solid #00bcd4;
+        transition: 0.5s;
+      }
+
+      .contact-form .input-box input[type="submit"]:hover {
+        background: #fff;
+        color: #00bcd4;
+      }
+
+      @media (max-width: 991px) {
+        
+
+        .wrapper_seg_row {
+          flex-direction: column;
+        }
+
+        .contact-info {
+          margin-bottom: 40px;
+          width: 100%;
+        }
+
+        .contact-form {
+          width: 100%;
+        }
+      }
+      
+  
+</style>
+
+
+
